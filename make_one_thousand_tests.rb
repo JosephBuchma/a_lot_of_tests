@@ -1,7 +1,7 @@
 
 tests = ''
 1000.times do |i|
-  tests += "it 'test something #{i.to_s}' do\n  expect(true).to be_truthy\nend \n"
+  tests += "it 'test something #{i.to_s}' do\n  expect(true).to be_falsey\nend \n"
 end
 
 buffer = "require 'rspec'\n\ndescribe 'one thousand tests' do\n #{tests} \nend\n"
