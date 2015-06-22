@@ -6,6 +6,8 @@ end
 
 buffer = "require 'rspec'\n\ndescribe 'one thousand tests' do\n #{tests} \nend\n"
 
-f = File.new('spec/one_thousand_tests_spec.rb', 'w')
-f.write(buffer)
-f.close()
+10.times do |i|
+  f = File.new("spec/one_thousand_tests#{i.to_s}_spec.rb", 'w')
+  f.write(buffer)
+  f.close()
+end
