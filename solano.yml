@@ -1,0 +1,17 @@
+plan:
+
+  - default
+
+profiles:
+
+  default:
+
+    script: "/bin/echo"
+
+    environment:
+
+      'FOOBARVAR': 'foobarval'
+
+      'PATH2': '/home/ubuntu/tmp'
+
+    timeout: 300
