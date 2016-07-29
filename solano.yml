@@ -6,12 +6,6 @@ profiles:
 
   default:
 
-    script: "/bin/echo"
+      system:
+          session_manager: 'destro_free'
 
-    environment:
-
-      'FOOBARVAR': 'foobarval'
-
-      'PATH2': '/home/ubuntu/tmp'
-
-    timeout: 300
