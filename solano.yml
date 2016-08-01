@@ -6,6 +6,3 @@ profiles:
 
   default:
 
-      system:
-          session_manager: 'destro_free'
-
